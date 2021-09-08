@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const playTest = () => {
+    const burgerImg = './image/burger.png';
+    const burgerBlackImg = './image/burgerBlack.png';
+    const titleStandart = 'Стандарт';
+    const titleBlack = 'Чёрный';
+
     const renderQuestions = () => {
       questionTitle.textContent = 'Какого цвета бургер вы хотите?';
 
@@ -23,15 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
 				<div class="answers-item d-flex flex-column">
 					<input type="radio" id="answerItem1" name="answer" class="d-none">
 					<label for="answerItem1" class="d-flex flex-column justify-content-between">
-						<img class="answerImg" src="./image/burger.png" alt="burger">
-						<span>Стандарт</span>
+						<img class="answerImg" src="${burgerImg}" alt="burger">
+						<span>${titleStandart}</span>
 					</label>
 				</div>
 				<div class="answers-item d-flex justify-content-center">
 					<input type="radio" id="answerItem2" name="answer" class="d-none">
 					<label for="answerItem2" class="d-flex flex-column justify-content-between">
-						<img class="answerImg" src="./image/burgerBlack.png" alt="burger">
-						<span>Черный</span>
+						<img class="answerImg" src="${burgerBlackImg}" alt="burger">
+						<span>${titleBlack}</span>
 					</label>
 				</div>
 			`;
